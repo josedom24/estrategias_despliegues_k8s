@@ -15,8 +15,9 @@ Instalamos prometheus y grafana:
 Añadimos a helm los siguiente repositorios:
 
 ```
-prometheus-community	https://prometheus-community.github.io/helm-charts
-grafana             	https://grafana.github.io/helm-charts  ```
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo add bitnami grafana https://grafana.github.io/helm-charts  
+helm repo update
 ```
 
 Realizamos la instalación en el namespace `monitoring`:
@@ -33,7 +34,7 @@ helm install grafana \
     grafana/grafana
 ```
 
-Comporbamos que se han creado los recursos:
+Comprobamos que se han creado los recursos:
 
 ```
 kubectl get all -n monitoring
