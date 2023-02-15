@@ -17,6 +17,7 @@ Añadimos a helm los siguiente repositorios:
 ```
 prometheus-community	https://prometheus-community.github.io/helm-charts
 grafana             	https://grafana.github.io/helm-charts  ```
+```
 
 Realizamos la instalación en el namespace `monitoring`:
 
